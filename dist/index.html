@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP System</title>
+    <script type="module" crossorigin src="/assets/index-BS48Btcb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-o7DWEbl2.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>RSVP System</h1>
+      <form id="rsvp-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div>
+          <label for="attending">Attending:</label>
+          <select id="attending" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+        <div>
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" min="0" value="0">
+        </div>
+        <div>
+          <label for="dietary">Dietary Restrictions:</label>
+          <textarea id="dietary"></textarea>
+        </div>
+        <button type="submit">Submit RSVP</button>
+      </form>
+      <div id="rsvp-list"></div>
+    </div>
+  </body>
+</html>

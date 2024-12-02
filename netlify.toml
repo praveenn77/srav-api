@@ -1,0 +1,10 @@
+[build]
+  publish = "dist"
+
+[[edge_functions]]
+  path = "/api/rsvp"
+  function = "create-rsvp"
+
+[[edge_functions]]
+  path = "/api/rsvps"
+  function = "get-rsvps"
